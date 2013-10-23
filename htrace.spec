@@ -3,7 +3,7 @@
 
 Name: htrace
 Version: 2.03
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Tracing framework for java based distributed systems
 License: ASL 2.0
 URL: http://github.com/cloudera/htrace
@@ -51,5 +51,9 @@ This package contains javadoc for %{name}.
 %doc LICENSE.txt
 
 %changelog
+* Wed Oct 23 2013 Robert Rati <rrati@redhat> - 2.03-2
+- Added ownership jar directory
+- Added Require on java
+
 * Tue Oct  8 2013 Robert Rati <rrati@redhat> - 2.03-1
 - Initial rpm
