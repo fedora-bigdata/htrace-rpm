@@ -13,6 +13,7 @@ BuildRequires: java-devel
 BuildRequires: jetty-util-ajax
 BuildRequires: libthrift-java
 BuildRequires: maven-local
+Requires: java
 BuildArch: noarch
 
 %description
@@ -44,6 +45,7 @@ This package contains javadoc for %{name}.
 
 %files -f .mfiles
 %doc LICENSE.txt
+%dir %{_javadir}/%{name}
 
 %files javadoc -f .mfiles-javadoc
 %doc LICENSE.txt
